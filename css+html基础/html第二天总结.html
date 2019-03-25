@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>总结</title>
+</head>
+<body>
+    <p>1. 锚点定位:&lt;p id="id"&gt; &lt;a href="#id" &gt; 
+    <br>  跨页面定位：&lt; a href="html地址#id" &gt;> </p>
+    <br>
+    <p>2. 转义符：<:& lt; &nbsp;&nbsp;&nbsp; >:& gt; </p>
+    <br>
+    <p>3. 无序列表:&lt;ul&gt; 
+       <br>  &lt;li&gt; xxx &lt;/li&gt; &lt;/ul&gt;
+       <br> 有序列表：&lt;ol&gt;
+       <br> &lt;li&gt; xxx &lt;/li&gt; &lt;/ol&gt; &nbsp;(ps:li中可放入其他标签)
+       <br>自定义列表：dl dt dd &nbsp;&nbsp;&nbsp;
+           <dl>
+               <dt>手机品牌</dt>
+               <dd>诺基亚</dd>
+               <dd>小米</dd>
+               <dt>电脑品牌</dt>
+               <dd>苹果</dd>
+               <dd>小米</dd> 
+           </dl>
+    </p>
+    <br>
+    <p>4. 表格： table , th:表头 放在tr里面 , tr:表格的行 , td：行内的单元格
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;结构：
+                 table ， caption: 表格的标题 里面可以放h1 ，thead：th表头放里面 ，tbody: td放里面
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;属性：
+                 width,height: 宽高. &nbsp;&nbsp; 
+                 border: 表格的边框.&nbsp;&nbsp;  
+                 cellspacing: 边框之间的空隙,&nbsp;&nbsp;  
+            <br> cellpadding: 内容与边框距离,一般不用.&nbsp;&nbsp;  
+                 align:控制元素的水平对齐方式(left,right,center)
+            <br> rowspan: 跨行合并，在td中，后面不需要数据就删除，不然后面数据会被挤出去
+            <br> colspan: 跨列合并，在td中，后面不需要数据就删除，不然后面数据会被挤出去
+    </p>
+    <br>
+    <p>
+        5. 表单： &lt; from &gt;  &lt;/from &gt; 
+            
+            <br> 文本: &lt;input type="text" value="默认值(记住账号密码)实体字" placeholder="占位符，输入字就不见，虚体字"&gt;
+            <br> 密码: &lt;input type="password" maxlength="6" &gt;(ps:最大maxlength最大字符数)
+            <br> 单选: &lt;input type="radio" name="xxx" &gt;男
+                       &lt;input type="radio" name="xxx" &gt;女
+                       &lt;input type="radio" name="xxx"  checked&gt;保密
+            <br> (ps:由于单选互斥，所以需要一个以相同name分为一组,checked 是默认选中的)
+            <br> 多选: &lt;input type="checkbox" name="xxx" &gt;扫雷
+                       &lt;input type="checkbox" name="xxx" &gt;坦克大战
+                       &lt;input type="checkbox" name="xxx" checked &gt;蜘蛛纸牌
+            <br> (ps:checked 是默认选中的)
+            <br>普通按钮: &lt;input type="button" value="按钮名字" &gt;
+            <br>提交按钮: &lt;input type="submit" (默认名字是"提交") &gt;
+            <br>重置按钮: &lt;input type="reset" value="按钮名字" &gt;(ps:必须和from表单使用)
+            <br>图片按钮: &lt;input type="image" src="图片地址" &gt;
+            <br>新版本按钮: &lt;button &gt; 按钮名字 &lt;/button &gt;
+            <br>文件域: &lt;input type="file" &gt;(ps:用于提交文件)
+            <br>下拉列表: &lt;select&gt; &lt;option selected&gt; xxx &lt;/option&gt; &lt;/select&gt; (ps:selected是默认)
+            <br>文本域: &lt;textarea cols="100" rows="100"&gt; &lt;/textarea &gt;
+    </p>
+    <pre><strong><font size="4px" color="black">
+6.&lt;lable&gt;
+  &lt;input type="radio"&gt; xxxx
+  &lt;/lable&gt;(ps:这个是嵌套关系)
+  lable: 绑定关系,后面文字和选择一样都可以点击
+  &lt;lable for="id"&gt;xxxx&lt;/lable&gt;
+  &lt;input type="radio" id="id"&gt;(ps:并列关系)</font></strong>         
+    </pre>
+    <p>7. <span style="color:blue">
+        color:blue / color:#fffffff / color:rgb(255,255,255)
+    </span></p>
+
+
+
+
+</body>
+</html>

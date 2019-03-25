@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>1. input{ border:0 ;清除默认编剧 / outline:none; 清除高亮线 } </p>
+    <br>
+
+    <p>2. font: 12px/100% "微软雅黑" (ps:大部分标签有默认行号,会影响做布局,可以清除多余行高. 微软雅黑不可省略)</p>
+    <br>
+
+    <p>3. 浮动之前用来文字环绕 , 行内块 和 行内元素相当于有内容的,所以不被浮动给盖住 , 例如:一个浮动后面接一个行内块或者行内元素,后面的不会会移过去被盖住</p>
+    <br>
+
+    <p>4. 浮动之间没间隙,行内块有间隙</p>
+    <br>
+
+    <p>5. 浮动元素可以实现转换,拥有行内块特点 / 会脱标准流 不占据标准流位置 / 浮动元素如果前面有标准流, 浮动只会原地浮动,不会主动占据标准流位置 /
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;浮动顶部对齐 , 行内块是底部对齐 / 父元素浮动, 子元素会被带跑 / 子元素浮动范围在父元素区域内 </p>
+    <br>
+
+    <p>6. li:hover a{} 意思是点击li之后 a标签的改变状态</p>
+    <br>
+
+    <p>7. 清除浮动: 高度法: 高度可以写死 / 给父盒子设置上overflow:hidden (让子盒子浮动不影响父盒子, 但是隐藏了超出的信息) /
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;额外标签法: clear:left / right / both 这个属性只能控制自己,不能控制别人, 但是会添加没有意义的结构
+        <br>单双伪元素清除浮动: display:需要变成块级元素和div一样，伪元素不是行内元素就是行内块元素
+        <pre><b>.clearfix:after{   centent:" . ";                             .clearfix{  
+                   clear: both;                                    *zoom: 1 ;
+                   display:block;                              }
+                   height : 0;                      
+                   visibility : hidden; }</b></pre>
+        <pre><b>            .clearfix:before ,
+            .clearfix:after {                      .clearfix:after {       .clearfix{
+                        centent:"";                 clear: both;           *zoom: 1 ;                           
+                        display:block ;                       }                }
+                            }</b></pre>
+    </p>
+    <br>
+
+    <p>8. 伪元素(不是块级元素):通过css可以将两个元素添加在页面上, 但是不存在html中 / 标签::before { content="内容"; } (ps:centent一定要有,before伪元素在元素之前)/</p>
+    <br>
+
+    <p>9. </p>
+    <br>
+
+    <p>10. </p>
+    <br>
+
+
+    <p>11. </p>
+    <br>
+
+    <p>12. </p>
+    <br>
+
+
+
+</body>
+
+</html>

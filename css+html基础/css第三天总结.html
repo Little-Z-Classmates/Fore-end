@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>1. 层叠性: 如果有多个相同的选择器都有同一个元素,后来者居上</p>
+    <br>
+
+    <p>2. 继承性: 三个div一套下来,father son sun , father类 部分元素 被子类继承
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;两个标签特殊:a标签不继承颜色 ; h系列标签不继承字体大小</p>
+    <br>
+
+    <p>3. 优先级: 继承 &lt; 通配符 &lt; 标签 &lt; 类选择器 &lt; id &lt; 行内style &lt; !important </p>
+    <br>
+
+    <p>4. 权重的计算:先判断选择器有没有直接作用到目标元素 , 如果没有直接作用 , 就是继承优先级为0 ,
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;再确定行内式 以及 !important ,如果有,那么其他人就不用玩了
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;再数id, id最多,权重最高
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;再数类, 类最多,权重最高
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;最后数标签,标签权重最高
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;如果都一样,后来者居上</p>
+    <br>
+
+    <p>5. 边框:border-color / border-width / border-style:solid 实线 ,double 双实线, dashed 虚线, dotted 点线
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;连写: border-width:10px 20px 10px 30px;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;连写: border-color:xx xx xx xx xx;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;连写: border-style:xx xx xx xx;
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;超级连写:border:1px solid red; 无顺序要求 solid不能省略</p>
+    <br>
+
+    <p>6. 边框的圆角属性:border-radius:10px
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;控制边框的圆角, 圆的半径 </p>
+    <br>
+
+    <p>7. 让盒子水平居中:margin:0 auto; 盒子自适应屏幕 块级专属！！！！
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;如果想让盒子垂直水平居中:auto auto; 错误!!!!(px:屏幕父盒子高度不固定 没有效果)
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;行内和行内块不能用这个 </p>
+    <br>
+
+    <p>8. 默认的标签,是自带内外边距的,会影响我们做布局,所以得清楚margin和padding</p>
+    <br>
+
+    <p>9. padding和margin无效情况:
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;行内元素(line类型),垂直方向(top和bottom)的margin和padding,是没有效果的
+    </p>
+    <br>
+
+    <p>10. 相邻margin垂直塌陷(仅仅在标准流里面):上面的:margin-bottom:100px 下面的:margin-top:150px; 结果:他们之间距离不是相加,而是取最大值或相等值
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;<b>解决相邻垂直塌陷</b>:避免就行,例如:只用一个上或者下margin 或者 脱离标准流
+    </p>
+    <br>
+
+
+    <p>11. 包含margin塌陷:父盒子有margin-top 子盒子有margin-top,子盒子margin-top失效, 在两个盒子中取最大值或相等值, 在父盒子的margin-top中显示
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;<b>解决包含塌陷</b>:① 给父元素加一个padding-top; ② 给父元素加一个border-top;  ③ 父盒子中加 overflow:hidden ( ps:BFC机制,块级格式化上下文,让内部不影响外部 )
+    </p>
+    <br>
+
+    <p>12. 真实宽高:浏览器最终加载出来的效果 
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真实宽高=内容宽/高 + border + margin</p>
+    <br>
+
+
+
+</body>
+
+</html>
